@@ -59,7 +59,7 @@ router.get('/v1/incidents/', function (req, res) {
 })
 
 router.get('/v1/incidents/:incident_no', function (req, res) {
-  Incident.find({incident_no: req.params.incident_no}, function (err, incidents) {
+  Incident.findOne({incident_no: req.params.incident_no}, function (err, incidents) {
     if (err) {
       res.status(500)
       res.setHeader('Content-Type', 'application/vnd.error+json')
