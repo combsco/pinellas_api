@@ -1,5 +1,6 @@
 var express = require('express')
 var mongoose = require('mongoose')
+var cors = require('cors')
 var Schema = mongoose.Schema
 
 var port = process.env.PORT || 5000
@@ -71,5 +72,6 @@ router.get('/v1/incidents/:incident_no', function (req, res) {
   })
 })
 
+app.use(cors())
 app.use('/', router)
 app.listen(port)
