@@ -45,7 +45,7 @@ var incidentSchema = new Schema({
 var Incident = mongoose.model('Incident', incidentSchema)
 
 router.get('/v1/incidents/', function (req, res) {
-  Incident.find({status: 'Active'}, function (err, incidents) {
+  Incident.find({status: 'active'}, function (err, incidents) {
     if (err) {
       res.status(500)
       res.setHeader('Content-Type', 'application/vnd.error+json')
