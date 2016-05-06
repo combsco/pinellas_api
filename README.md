@@ -4,7 +4,7 @@
 
 ## Background
 
-* **Purpose**: Primarily to make it easy to retrieve incident history for [Pinellas911.co](https://beta.pinellas911.co) should the pub/sub client lose its connection, a new user loads the page or when the page happens to get refreshed. Secondarily it will be used for incident search in the future.
+* **Purpose**: Primarily to make it easy to retrieve incident history for [Pinellas911.co](https://www.pinellas911.co) should the pub/sub client lose its connection, a new user loads the page or when the page happens to get refreshed. Secondarily it will be used for incident search in the future.
 
 If you're a visual person the following sequence is what happens:
 ![](https://blog.pusher.com/wp-content/uploads/2015/11/message-history-449x300.png)
